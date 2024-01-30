@@ -2,6 +2,7 @@
 
 // install event
 self.addEventListener('install', (event) => {
+    console.log("installation en cours...");
     event.waitUntil(
       caches.open('nom_du_cache')
         .then((cache) => {
@@ -12,13 +13,16 @@ self.addEventListener('install', (event) => {
             'imgs/a.jpg',
             'imgs/b.jpg',
             'imgs/c.jpg',
+            'imgs/d.jpg',
             'imgs/icone144.png',
             'manifest.json'
-            //'imgs/d.jpg',
          ]);
         })
         .then(() => {
           return self.skipWaiting();
+        }).then(r => {
+          console.log("installation terminée !");
+          return r;
         })
     );
   });
@@ -31,3 +35,5 @@ self.addEventListener('install', (event) => {
       })
     );
   });
+
+// version 1.24.352.35232514
