@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Service Worker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="manifelst" href="manifels.json" />
+		<link rel="stylesheet" href="style.css">
+		<script>
+		if('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js');
+			console.log("service ajouté");
+		}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://ensg_dei.gitlab.io/web-az/js/sw/#exercice-service-worker" target="_blank">Enoncé</a></li>
+		</ul>
+        <div id="app">
+			<h1>Oh, my lovely website</h1>
+			<ul>
+			  <li><img src="imgs/a.jpg" alt=""></li>
+			  <li><img src="imgs/b.jpg" alt=""></li>
+			  <li><img src="imgs/c.jpg" alt=""></li>
+			  <li><img src="imgs/d.jpg" alt=""></li>
+			</ul>
+		</div>
+	</body>
+</html>

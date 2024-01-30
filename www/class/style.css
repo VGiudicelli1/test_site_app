@@ -1,0 +1,21 @@
+form {
+    background-color: #EEE;
+}
+
+div.drawing-area {
+    position: relative;
+    --size: 500px;
+    --time: 0;
+    background-color: #DDF;
+    margin: 1em auto;
+    height: var(--size);
+    width: var(--size);
+    overflow: hidden;
+}
+
+div.forme {
+    --anim-speed: 1;
+    --angle: 0deg;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(calc(var(--angle) + var(--anim-speed) * var(--time) * 1deg));
+}

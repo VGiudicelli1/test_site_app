@@ -1,0 +1,20 @@
+.limite {
+    color: red;
+}
+
+div.tweets {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DCF;
+    align-items: center;
+    justify-content: center;
+}
+
+div.tweet {
+    display: block;
+    border: solid 1px blue;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
