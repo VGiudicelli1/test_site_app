@@ -36,4 +36,4 @@ self.addEventListener('install', (event) => {
     );
   });
 
-// version 1.24.352.35232514
+// version 1.24.352.352325144
